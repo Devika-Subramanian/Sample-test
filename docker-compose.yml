@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  test:
+    build: .
+    environment:
+      NODE_ENV: prod #set this to prod when just running the app using docker-compose up without any command here
+    ports:
+      - '3000:3000' 
+    # command: npm test   
